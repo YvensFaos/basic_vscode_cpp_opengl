@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [   
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g", 
+                "-o", 
+                "main",
+                "-std=c++11",
+                "*.cpp",
+                "/System/Library/Frameworks/OpenGL.framework/Versions/Current/OpenGL",
+                "/System/Library/Frameworks/GLUT.framework/Versions/Current/GLUT",
+                "/System/Library/Frameworks/Cocoa.framework/Versions/Current/Cocoa",
+                "/System/Library/Frameworks/IOKit.framework/Versions/Current/IOKit",
+                "/System/Library/Frameworks/CoreVideo.framework/Versions/Current/CoreVideo",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
